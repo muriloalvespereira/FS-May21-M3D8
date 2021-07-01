@@ -1,42 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
 
     <title>Hello, world!</title>
   </head>
+
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-              <a class="navbar-brand pb-2" href="#">Amazon</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="./backoffice.html">Backoffice<span class="sr-only">(current)</span></a>
-                  </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row mt-5 justify-content-center">
-                <!-- <form onsubmit="sendProducts(event)" class="border p-5">
+        <a class="navbar-brand pb-2" href="#">Amazon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./backoffice.html"
+                >Backoffice<span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-5 justify-content-center">
+        <!-- <form onsubmit="sendProducts(event)" class="border p-5">
                   <label for="name">Name:</label>
                   <input type="text" id="name" class="ml-3" required>
                   <label for="description">Description:</label>
@@ -44,72 +70,170 @@
                   <label for="brand">Brand:</label>
                   <input type="text" id="brand" class="ml-3" required>
               </form> -->
-              <form onsubmit="sendForm(event)" class="border p-5">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="nameField" required>
-                </div>
-                <div class="form-group">
-                  <label for="description">Description</label>
-                  <input type="textarea" rows="8" class="form-control" id="description" aria-describedby="descriptionField" required>
-                </div>
-                <div class="form-group">
-                  <label for="brand">Brand</label>
-                  <input type="text" class="form-control" id="brand" aria-describedby="brandField" required>
-                </div>
-                <div class="form-group">
-                  <label for="imageUrl">Img URL</label>
-                  <input type="text" class="form-control" id="imageUrl" aria-describedby="imageUrlField" required>
-                </div>
-                <div class="form-group">
-                  <label for="price">Price</label>
-                  <input type="number" class="form-control" id="price" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-        </div>
-        
-        
+        <form class="border p-5 form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              aria-describedby="nameField"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input
+              type="textarea"
+              rows="8"
+              class="form-control"
+              id="description"
+              aria-describedby="descriptionField"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="brand">Brand</label>
+            <input
+              type="text"
+              class="form-control"
+              id="brand"
+              aria-describedby="brandField"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="imageUrl">Img URL</label>
+            <input
+              type="text"
+              class="form-control"
+              id="imageUrl"
+              aria-describedby="imageUrlField"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" class="form-control" id="price" required />
+          </div>
+          <div class="d-flex justify-content-between">
+            <button
+              type="button"
+              class="btn btn-primary btn-submit"
+              onclick="sendForm(event)"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger d-none"
+              onclick="deleteProduct()"
+            >
+              Delete
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script>
-       const sendForm = async (event) => {
-        event.preventDefault()
-        const url = "https://striveschool-api.herokuapp.com/api/product/"
+      const productId = new URLSearchParams(window.location.search).get("id");
+      console.log(productId);
 
+      const url = productId
+        ? "https://striveschool-api.herokuapp.com/api/product/" + productId
+        : "https://striveschool-api.herokuapp.com/api/product/";
+
+      const method = productId ? "PUT" : "POST";
+
+      if (productId) {
+        document.querySelector(".btn-submit").innerText = "Edit";
+        document.querySelector(".btn-danger").classList.remove("d-none");
+      }
+
+      const getData = async () => {
+        const response = await fetch(url, {
+          method,
+          headers: {
+            Authorization:
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjk1ZGIzNTgxNzAwMTVjMjI3MjYiLCJpYXQiOjE2MjUwNTc2MzAsImV4cCI6MTYyNjI2NzIzMH0.PCebFyd28A7h5LkwblkqMU8Gf3BXrcfKepkegk76eaw",
+          },
+        });
+
+        const data = await response.json();
+        if (productId) {
+          document.querySelector("#name").value = data.name;
+          document.querySelector("#description").value = data.description;
+          document.querySelector("#brand").value = data.brand;
+          document.querySelector("#imageUrl").value = data.imageUrl;
+          document.querySelector("#price").value = data.price;
+        }
+      };
+
+      const deleteProduct = async () => {
+        const response = await fetch(url, {
+          method: "DELETE",
+          headers: {
+            Authorization:
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjk1ZGIzNTgxNzAwMTVjMjI3MjYiLCJpYXQiOjE2MjUwNTc2MzAsImV4cCI6MTYyNjI2NzIzMH0.PCebFyd28A7h5LkwblkqMU8Gf3BXrcfKepkegk76eaw",
+          },
+        });
+
+        if (response.ok) {
+          document.querySelector(".form").reset();
+
+          alert("Product deleted");
+          window.location.replace("./index.html");
+        }
+      };
+
+      const sendForm = async (event) => {
         const formDetails = {
-            name: document.querySelector("#name").value, 
-            description: document.querySelector("#description").value,
-            brand: document.querySelector("#brand").value,
-            imageUrl: document.querySelector("#imageUrl").value,
-            price: document.querySelector("#price").value
+          name: document.querySelector("#name").value,
+          description: document.querySelector("#description").value,
+          brand: document.querySelector("#brand").value,
+          imageUrl: document.querySelector("#imageUrl").value,
+          price: document.querySelector("#price").value,
+        };
+
+        try {
+          const response = await fetch(url, {
+            method,
+            body: JSON.stringify(formDetails),
+            headers: {
+              Authorization:
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjk1ZGIzNTgxNzAwMTVjMjI3MjYiLCJpYXQiOjE2MjUwNTc2MzAsImV4cCI6MTYyNjI2NzIzMH0.PCebFyd28A7h5LkwblkqMU8Gf3BXrcfKepkegk76eaw",
+              "Content-Type": "application/json",
+            },
+          });
+          if (response.ok) {
+            document.querySelector(".form").reset();
+            if (productId) {
+              alert("Product successfully edited");
+            } else {
+              alert("Product successfully added");
+            }
+            window.location.replace("./index.html");
+          }
+        } catch (err) {
+          console.log(err);
         }
+      };
 
-try{
-    const response = await fetch(url, {
-        method: "POST",
-        body: JSON.stringify(formDetails),
-        headers: {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGRjNjk1ZGIzNTgxNzAwMTVjMjI3MjYiLCJpYXQiOjE2MjUwNTc2MzAsImV4cCI6MTYyNjI2NzIzMH0.PCebFyd28A7h5LkwblkqMU8Gf3BXrcfKepkegk76eaw",
-       "Content-Type": "application/json",
-        }
-    })
-} catch (err) {
-console.log(err)
-}
-}
-
-
-    //    window.onload = async () => {
-        
-    //     sendData(url);
-    //    }
-
+      window.onload = () => {
+        getData();
+      };
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
- 
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
